@@ -87,6 +87,8 @@ namespace FabrikamCustomerServiceBot.Dialogs
                     case 17:
                         if (date.Minute <= 20)
                             floor = 1;
+                        else
+                            floor = -1;
                         break;
                     case var late when (late > 17):
                     case var early when (early < 8):
