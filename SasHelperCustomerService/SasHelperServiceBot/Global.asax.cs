@@ -10,7 +10,7 @@ using Microsoft.Bot.Builder.Dialogs.Internals;
 using Microsoft.Bot.Connector;
 using Autofac;
 
-namespace FabrikamCustomerServiceBot
+namespace SasHelperServiceBot
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

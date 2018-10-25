@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace FabrikamCustomerServiceBot.Dialogs
+namespace SasHelperServiceBot.Dialogs
 {
     using System;
     using Microsoft.Bot.Builder.FormFlow;

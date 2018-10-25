@@ -8,7 +8,7 @@ using System;
 using Microsoft.Bot.Builder.Luis;
 using System.Configuration;
 
-namespace FabrikamCustomerServiceBot
+namespace SasHelperServiceBot
 {
     [BotAuthentication]
     public class MessagesController : ApiController
