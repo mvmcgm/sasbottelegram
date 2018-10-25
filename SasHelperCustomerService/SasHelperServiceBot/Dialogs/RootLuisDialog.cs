@@ -98,7 +98,7 @@ namespace SasHelperServiceBot.Dialogs
                 
                 if (floor == 0)
                 {
-                    await context.PostAsync("O carrinho encontra-se em movimento, por favor aguarde um pouco.");
+                    await context.PostAsync("O carrinho infelizmente encontra-se em movimento, por favor aguarde um pouco.");
                 }
                 else if(floor == -1)
                 {
