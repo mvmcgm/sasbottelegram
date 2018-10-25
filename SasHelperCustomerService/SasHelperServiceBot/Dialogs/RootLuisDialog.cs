@@ -118,14 +118,14 @@ namespace SasHelperServiceBot.Dialogs
         [LuisIntent("Confirm")]
         private async Task CommunicationConfirm(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
         {
-            await context.PostAsync("O que?");
+            await context.PostAsync("Certo, em que posso te ajudar?");
             context.Wait(MessageReceived);
         }
 
         [LuisIntent("Reject")]
         private async Task CommunicationReject(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
         {
-            await context.PostAsync("Não queria mais falar com você mesmo.");
+            await context.PostAsync("Espero ter ajudado, até mais!");
             context.Done<object>(null);
         }
         
