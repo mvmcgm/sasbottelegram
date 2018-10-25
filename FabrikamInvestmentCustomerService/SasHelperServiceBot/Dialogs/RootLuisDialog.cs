@@ -5,7 +5,7 @@ using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Luis.Models;
 using Microsoft.Bot.Builder.Luis;
 
-namespace FabrikamCustomerServiceBot.Dialogs
+namespace SasHelperServiceBot.Dialogs
 {
     [Serializable]
     public class RootLuisDialog : LuisDialog<object>
@@ -129,5 +129,12 @@ namespace FabrikamCustomerServiceBot.Dialogs
             context.Done<object>(null);
         }
         
-    }
+        [LuisIntent("StatusJira")]
+        private async Task CommunicationReject(IDialogContext context, IAwaitable<IMessageActivity> activity, LuisResult result)
+        {
+            
+            await context.PostAsync("Entendi, consegue me passar o número do chamado?");
+            context.Done<object>(null);
+        }
+   }
 }

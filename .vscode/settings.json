@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b4c62d3a-d347-4261-9dea-16e47462adc6/resourceGroups/HelpDeskBot/providers/Microsoft.Web/sites/botwithlouis",
+    "appService.deploySubpath": ""
+}
